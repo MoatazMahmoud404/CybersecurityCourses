@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/0xReDrag0n.png') }}" alt="Logo" class="logo-icon">
+            <a id="title" href="/">Course Platform</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="mailto:42210055.moataz@acu.edu.eg">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>{{ course.name }} ({{ course.nickname }})</h1>
+        <img src="{{ url_for('static', filename=course.image) }}" alt="{{ course.name }}" class="course-image">
+        <p><strong>Description:</strong> {{ course.description }}</p>
+        <p><strong>Price:</strong> {{ course.price }}</p>
+        <p><strong>Company:</strong> {{ course.company }}</p>
+        <p><strong>Classification:</strong> {{ course.classification }}</p>
+        <p><strong>Team:</strong> {{ course.team }}</p>
+        <a id="button" href="/">Back to Courses</a>
+        <a id="button" href="{{ course.enroll_url }}" target="_blank">Enroll Now</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 0xReDrag0n. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

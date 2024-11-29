@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Programming on the Web</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/0xReDrag0n.png') }}" alt="Logo" class="logo-icon">
+            <a id="title" href="/">Course Platform</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="mailto:42210055.moataz@acu.edu.eg">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="course-info">
+            <h2 id="headline">Course Information</h2>
+            <p><strong>Student Name:</strong> Moataz Mahmoud Mohamed</p>
+            <p><strong>Student ID:</strong> 42210055</p>
+            <p><strong>Group:</strong> C1</p>
+            <p><strong>Course:</strong> Programming on the Web</p>
+            <p><strong>Course Code:</strong> CSC304</p>
+        </div>
+        <br>
+        <div class="instructor-info">
+            <h2 id="headline">Instructor and Teaching Assistants</h2>
+            <p><strong>Instructor:</strong> Dr. Sherif ElSahfei</p>
+            <p><strong>Teaching Assistants:</strong></p>
+            <ul>
+                <li>Eng. Mayar Atef</li>
+                <li>Eng. Ahmed Karem</li>
+            </ul>
+        </div>
+        <br>
+        <div class="course-description">
+            <h2 id="headline">Course Description</h2>
+            <p>This course provides an in-depth introduction to web programming. Topics include HTML, CSS, JavaScript,
+                and backend programming with modern frameworks and tools. Students will gain hands-on experience in
+                developing dynamic websites and web applications, preparing them for real-world challenges in the field
+                of web development.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 0xReDrag0n. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
