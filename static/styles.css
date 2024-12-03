@@ -234,7 +234,6 @@ header .logo .logo-icon {
     font-weight: bold;
 }
 
-/* Additional Media Query for Mobile */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -253,7 +252,6 @@ header .logo .logo-icon {
 
     .courses {
         grid-template-columns: 1fr;
-        /* Single column on smaller screens */
     }
 
     h1,
